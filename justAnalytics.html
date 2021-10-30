@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<title>K-12 Cyber Security</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style type="text/css">
+    table.tableizer-table {
+        font-size: 12px;
+        border: 1px solid #CCC; 
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+    } 
+    .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid #CCC;
+        vertical-align:text-top;
+        width: 25%;
+    }
+    .tableizer-table th {
+        background-color: #06121f; 
+        color: #FFF;
+        font-weight: bold;
+        width: 25%;
+    }
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>K-12 Education and Technology</b> Team 8</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html#background" class="w3-bar-item w3-button">Home</a>
+      <a href="index.html#Threat" class="w3-bar-item w3-button">Threat Modelling</a>
+      
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Data Source</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="data.html#shodan" class="w3-bar-item w3-button">Shodan</a>
+          <a href="data.html#exploit-db" class="w3-bar-item w3-button">Exploit-DB</a>
+          <a href="data.html#sploitus" class="w3-bar-item w3-button">SploitUs</a>
+          <a href="data.html#haveibeenpwned" class="w3-bar-item w3-button">Haveibeenpwned</a>
+          
+        </div>
+      </div>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Justifications & Analytics</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="justAnalytics.html#justification" class="w3-bar-item w3-button">Justifications</a>
+          <a href="justAnalytics.html#analytics" class="w3-bar-item w3-button">Analytics</a>          
+        </div>
+      </div>
+      <a href="index.html#about" class="w3-bar-item w3-button">About Us</a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-32" id="background">
+ <!-- First Photo Grid-->
+ <div class="w3-row-padding" id="justification">
+  <div class="w3-container w3-margin-bottom">
+    <img src="" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Reputation Analysis</b></p>
+
+
+        
+        <table class="tableizer-table">
+            <thead>
+                <tr class="tableizer-firstrow">
+                    <th>Why do we do this?</th>
+                    <th>What is the data source?</th>
+                    <th>Why do we pick this over other analytics approaches?</th>
+                    <th>What will we do?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reputation analysis will help us identify compromised or suspicious devices and IPs. 
+                        <br><br>
+                        This will help us block access with malicious intent to virtual classes, student records and accounting systems.
+                    </td>
+                    <td>Shodan:
+                        <ul>
+                            <li>IP address of unprotected devices</li>
+                            <li>Domain names</li>
+                            <li>File hashes</li>
+                        </ul>
+                        HaveIbeenpwned:
+                        <ul>
+                            <li>Compromised email & social accounts</li>
+                            <li>Domain names</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Identity theft is often the starting point of cybersecurity incidents in K-12 schools.</li>
+                            <li>Student accounts have been used to intrude virtual classes to show pornography or hate speech.</li>
+                            <li>Phishing emails are often started from compromised digital identities which then capture sensitive financial information from other legit administrators.</li>
+                            <li>Reputation analysis will help block the vulnerability and act at the root cause.</li> 
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Identifies suspicious domain names, IP addresses and file hashes</li>
+                            <li>Highlights high risk communications such as malware intended to communicate with known contaminated IPs or domain </li>
+                        </ul>
+                       
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </div>
+  </div>
+  <div class="w3-container w3-margin-bottom" id="exploit-db">
+        <div class="w3-container w3-white">
+            <p><b>Anomaly Detection</b></p>
+
+            <table class="tableizer-table">
+                <thead>
+                    <tr class="tableizer-firstrow">
+                        <th>Why do we do this?</th>
+                        <th>What is the data source? </th>
+                        <th>Why do we pick this over other analytics approaches?</th>
+                        <th>What will we do?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Anomaly detection identifies activities that are different from normal activities.  
+                            <br><br>
+                            Common threats of ransomware, phishing and class invasions can all leave traits of anomaly activities that can be traced.
+                        </td>
+                        <td>Internal Network Data
+                            <ul>
+                                
+                                <li>Network flow events</li>
+                                <li>Full packet capture</li>
+                                <li>DNS data</li>
+                                <li>DHCP logs</li>
+                                <li>e-mail metadata</li>
+                                
+                            </ul>
+                                Perimeter network data
+                            <ul>
+                                <li>network flow events</li>
+                                <li>proxy logs</li>
+                                <li>firewall logs</li>
+                                <li>full packet capture</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>At K-12 schools, students, teachers and parents’ activities are regular with repetitive schedules.
+                                </li>
+                                <li>Anomaly is a strong sign of cybersecurity threats.
+                                </li>
+                            </ul>
+                        </td>
+                        <td>Conducting time-series anomaly detection
+
+                            <ul>
+                                <li>Predictive confidence level approach : Use historical data to build a predictive model to identify overall common trend and patterns to benchmark against anomalies
+                                </li>
+                                <li>Statistical profiling approach:  Use historical data’s standard deviation to define the band that defines normal value and anything otherwise an anomaly</li>
+                                <li>Clustering based unsupervised approach:  Dynamically estimate the number of clusters without prior labeling.
+                                </li>
+                            </ul>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+  </div>
+
+  <div class="w3-container w3-margin-bottom" id="exploit-db">
+    <div class="w3-container w3-white">
+        <p><b>Malware Analysis</b></p>
+
+        <table class="tableizer-table">
+            <thead>
+                <tr class="tableizer-firstrow">
+                    <th>Why do we do this?</th>
+                    <th>What is the data source? </th>
+                    <th>Why do we pick this over other analytics approaches?</th>
+                    <th>What will we do?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Malware is the key risks identified that students and staff are often tricked into downloading malware to use at schools.
+
+                    </td>
+                    <td>
+                        The data source is the credibility ratings given by a community of trustworthy cybersecurity companies and portals. 
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Students and staff are often tricked by phishing email and malicious sites into installing malwares, which then opened the door to subsequent attacks such as virtual class intrusion and financial data compromise.</li>
+                            <li>Hence, malware analysis is key to block these subsequent threats.</li>
+                        </ul>
+                    </td>
+                    <td>Conducting time-series anomaly detection
+
+                        <ul>
+                            <li>We will enter the digital identity of the school on virustotal.com</li>
+                            <li>Virustotal.com will then analyzes the credibility ratings given by the community of trustworthy cybersecurity companies and portals.</li>
+                        </ul>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+</div>
+</div>
+    <div class="w3-container w3-margin-bottom" id="analytics"> 
+        <div class="w3-panel w3-black w3-card-4">
+            <h1>Analytics</h1>
+        </div>
+
+            <div>
+                <div class="w3-panel w3-card w3-gray">
+                    <p>Reputation Analytics</p>
+                  </div>
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRxmC7nQLPUv4fQ2cszutN7kQZrUHcfJGi7OlN9mvIbgHCu0qdkEsFsAdtcc1lkQxGqW8K-Yo4lT9Qz/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+            <hr>
+            <div>
+                <div class="w3-panel w3-card w3-gray">
+                    <p>Malware Analytics</p>
+                  </div>
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRitWFnRHHg7KPeIpiwRU3222_4RECMiKlx7IaWWHjZxlQG7k3SiKUZ-hhpMrYUljNtB8cnFfL3SJm7/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+            <hr>
+            <div>
+                <div class="w3-panel w3-card w3-gray">
+                    <p>Anomaly Detection</p>
+                  </div>
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRoOFWzE-yCWJmivT6MTAWwLLnIpR5KwRW-MWZXxoqJCdX1csRbLOwCP1F1M7kh4Jn1l0jCMVPhqLXG/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+            <hr>
+            <div>
+                <div class="w3-panel w3-card w3-gray">
+                    <p>Preliminary Visualization</p>
+                  </div>
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRpty_mG2lh6FkKsQmqzCLZi5Y-MNg16eeTvjQz91lEO1hf1zmgbuuXvPDznfJvCTfhMUSSLSK29hit/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+    </div>   
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>AI4Cyber - Class presentation</p>
+</footer>
+
+</body>
+</html>

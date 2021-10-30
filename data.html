@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<title>K-12 Cyber Security</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>K-12 Education and Technology</b> Team 8</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html#background" class="w3-bar-item w3-button">Home</a>
+      <a href="index.html#Threat" class="w3-bar-item w3-button">Threat Modelling</a>
+
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Data Source</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="data.html#shodan" class="w3-bar-item w3-button">Shodan</a>
+          <a href="#exploit-db" class="w3-bar-item w3-button">Exploit-DB</a>
+          <a href="#sploitus" class="w3-bar-item w3-button">SploitUs</a>
+          <a href="#haveibeenpwned" class="w3-bar-item w3-button">Haveibeenpwned</a>
+          
+        </div>
+      </div>
+
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Justifications & Analytics</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="justAnalytics.html#justification" class="w3-bar-item w3-button">Justifications</a>
+          <a href="justAnalytics.html#analytics" class="w3-bar-item w3-button">Analytics</a>          
+        </div>
+      </div>
+
+  
+      <a href="index.html#about" class="w3-bar-item w3-button">About Us</a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-32" id="background">
+ <!-- First Photo Grid-->
+ <div class="w3-row-padding">
+  <div class="w3-third w3-container w3-margin-bottom" id="shodan">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPSUP_R8eA5Rd38A12CIdGbNCFXfr6JuHMBmp5zkgcV8U456GjF5wmA7xvnpILaC7eOB8&usqp=CAU" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Shodan</b></p>
+      <p>
+        <hr>
+        <i>Discription:</i> This is a search engine developed by John Matherly. Almost all IP address can be searched, making this a source to find unprotected webcams, SCADA/ICS sites, and other IoT devices. Network flow events, proxy logs and firewall logs can be retrieved
+      </p>
+      <p>
+        <i>Justifications:</i> With online learning, a lot of students’ personal devices are used at home with computers and webcams exposed. Shodan will be able to reveal a lot of vulnerable IPs which in turn inform the protective strategy that can be taken by the education institutions.
+
+      </p>
+    </div>
+  </div>
+  <div class="w3-third w3-container w3-margin-bottom" id="exploit-db">
+    <img src="https://www.offensive-security.com/wp-content/uploads/2020/08/exploit-database.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Expoit-DB</b></p>
+      <p>
+        <hr>
+       <i> Description:</i> Often referred as ‘Google Dorks’, Google Hacking Database (GHD) contains custom Google search terms to expose sensitive information including usernames, passwords and vulnerable servers.
+      </p>
+      <p>
+        <i>Justifications:</i> Children information are often exposed without awareness even after months. The awareness of cybersecurity in education is in general very low. Hence, the schools can use this GHD to verify if the student information has been exposed with custom search strings. 
+
+      </p>
+    </div>
+  </div>
+  <div class="w3-third w3-container">
+    <img src="https://pbs.twimg.com/profile_images/1036858885783609350/QLGkbfxM_400x400.jpg" alt="Norway" style="width:50%; padding-top: 30px;" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>SploitUs</b></p>
+      <p>
+        <hr>
+       <i> Description:</i> Sploitus is a search engine for publicly available exploits of vulnerable software. If the schools are using a specific software with exploits, the schools can upgrade and patch in time.
+      </p>
+      <p>
+        <i>Justifications:</i> 
+        Another main reason of K12 schools being targeted are the lack of cybersecurity department and hence delays of upgrading software and usage of compromised software. Sploitus will pinpoint vulnerabilities in these situations.
+
+        </p>
+    </div>
+  </div>
+  <div class="w3-third w3-container" id="haveibeenpwned">
+    <img src="https://brands.home-assistant.io/_/haveibeenpwned/logo.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Haveibeenpwned</b></p>
+      <p>
+        <hr>
+       <i> Description:</i> This site checks whether email and social accounts have been compromised. This can be searched by school domain name as well, providing assessment of the risk of hackers pretending to be legit stakeholder and send phishing emails</p>
+      <p>
+        <i>Justifications:</i> 
+        Stolen accounts are often the first step of launching subsequent attacks. Ransomware starts from sending phishing email from stolen email access, while class invasion can be done by gaining access to Zoom with compromised registered email account.
+        </p>  
+    
+    </div>
+  </div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>AI4Cyber - Class presentation</p>
+</footer>
+
+</body>
+</html>
